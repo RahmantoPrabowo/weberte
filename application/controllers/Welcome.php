@@ -21,6 +21,11 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		echo "Baru";
+<<<<<<< Updated upstream
 		echo "lagi";
+=======
+
+		echo "jangan kasih kendoooooorororororor";
+>>>>>>> Stashed changes
 	}
 }
