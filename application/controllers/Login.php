@@ -14,30 +14,41 @@ class Login extends CI_Controller {
     $this->db->where('password', $password);
     $query = $this->db->get();
 
-     if($query->num_rows() > 0){
+    if($query->num_rows() > 0){
           $this->session->set_userdata('status','loged');
           $hasil = $query->result_array();
           $sess_array = array();
 
-          foreach($hasil as $row)
-          {
+            foreach($hasil as $row)
+            {
 
-             $sess_array = array(
-              'id'         => $row['id'],
-              'fullname'   => $row['firstname'],
-              'id_number'  => $row['lastname'],
-              'email'      => $row['nama']
+                $sess_array = array(
+                'id'         => $row['id'],
+                'fullname'   => $row['firstname'],
+                'id_number'  => $row['lastname'],
+                'email'      => $row['nama']
 
-             );
-              $this->session->set_userdata('data_session',$sess_array);
+                );
+                    $this->session->set_userdata('data_session',$sess_array);
+
+            }
+
+            if($hasil[0]['email']=="iron.man@avenger.com"){ 
+                  redirect(site_url('DashboardLurah'));
+                }
+
+            elseif($hasil[0]['email']=="thor@avenger.com"){ 
+                  redirect(site_url('DashboardKabidData'));
+                }
+                
+            else{ 
+                  redirect(site_url('Registrasi'));
+                }        
 
           }
 
-          redirect(site_url('Registrasi'));
-      }
-      else{
-          redirect(site_url('LandingPage'));
-      }
-
+    else{
+            redirect(site_url('LandingPage'));
     }
+}
 }
