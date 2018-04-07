@@ -38,7 +38,8 @@ class Login extends CI_Controller {
                 }
 
             elseif($hasil[0]['email']=="thor@avenger.com"){ 
-                  redirect(site_url('DashboardKabidData'));
+                  //redirect(site_url('DashboardKabidData'));
+                    redirect(site_url('DashboardOperator'));
                 }
                 
             else{ 
