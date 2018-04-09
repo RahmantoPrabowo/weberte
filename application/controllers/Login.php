@@ -27,32 +27,21 @@ class Login extends CI_Controller {
                 'fullname'   => $row['firstname'],
                 'id_number'  => $row['lastname'],
                 'email'      => $row['nama'],
-                'role'       => $row['role']
+                'peran'       => $row['peran']
 
                 );
                     $this->session->set_userdata('data_session',$sess_array);
 
             }
 
-            if($hasil[0]['role']=="lurah"){ 
-                    //redirect(site_url('DashboardLurah'));
+            if($hasil[0]['peran']=="Pak Lurah"){ 
                     redirect(site_url('DashboardLurah'));
                 }
-
-<<<<<<< Updated upstream
-            elseif($hasil[0]['email']=="thor@avenger.com"){ 
-                  //redirect(site_url('DashboardKabidData'));
-                    redirect(site_url('DashboardOperator'));
-<<<<<<< HEAD
-=======
-            elseif($hasil[0]['role']=="kabid data"){ 
-                  redirect(site_url('DashboardKabidData'));
->>>>>>> Stashed changes
-=======
->>>>>>> master
+            elseif($hasil[0]['peran']=="Kabid Data"){ 
+                   redirect(site_url('DashboardKabidData'));
                 }
 
-            elseif($hasil[0]['role']=="operator"){
+            elseif($hasil[0]['peran']=="Operator"){
                   redirect(site_url('DashboardOperator'));
             }
                 

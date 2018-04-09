@@ -23,15 +23,19 @@ CREATE TABLE IF NOT EXISTS `member_reguler` (
   `id_number` varchar(50) NOT NULL,
   `email` varchar(150) NOT NULL,
   `password` varchar(150) NOT NULL,
+  `peran` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 
 -- Dumping data for table weberte_db.member_reguler: ~3 rows (approximately)
 /*!40000 ALTER TABLE `member_reguler` DISABLE KEYS */;
-INSERT INTO `member_reguler` (`id`, `fullname`, `id_number`, `email`, `password`) VALUES
-	(1, 'Rahmanto Prabowo', '1602152408950001', 'rahmantoprabowo@helio.id', '6901eca97d203f9f87c4a9c9888976b9'),
-	(2, 'stark', '1234', 'iron.man@avenger.com', 'e10adc3949ba59abbe56e057f20f883e'),
-	(3, 'thor', '123', 'thor@avenger.com', 'e10adc3949ba59abbe56e057f20f883e');
+INSERT INTO `member_reguler` (`id`, `fullname`, `id_number`, `email`, `password`, `peran`) VALUES
+	(1, 'Rahmanto Prabowo', '1602152408950001', 'rahmantoprabowo@helio.id', '6901eca97d203f9f87c4a9c9888976b9', 'Pak Lurah'),
+	(2, 'stark', '1234', 'iron.man@avenger.com', 'e10adc3949ba59abbe56e057f20f883e', 'Kabid Data'),
+	(3, 'thor', '123', 'thor@avenger.com', 'e10adc3949ba59abbe56e057f20f883e', 'Operator'),
+	(5, 'peter parker', '12345', 'spiderman@avenger.com', 'e10adc3949ba59abbe56e057f20f883e', 'Pak RT'),
+	(6, 'Bruce Banner', '123412', 'hulk@avenger.com', 'e10adc3949ba59abbe56e057f20f883e', 'Humas'),
+	(7, 'Natasha Romanov', '123123', 'black.widow@avenger.com', 'e10adc3949ba59abbe56e057f20f883e', 'Bu RT');
 /*!40000 ALTER TABLE `member_reguler` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

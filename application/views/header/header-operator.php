@@ -4,15 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-<<<<<<< HEAD
-<<<<<<< Updated upstream
     <title>Halaman Operator</title>
-=======
-    <title>Halaman Ketua RT</title>
->>>>>>> Stashed changes
-=======
-    <title>Halaman Operator</title>
->>>>>>> master
     <!-- Favicon-->
     <link rel="icon" href="<?php echo base_url("assets/");?>favicon.ico" type="image/x-icon">
 
@@ -38,10 +30,6 @@
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="<?php echo base_url("assets/");?>css/themes/all-themes.css" rel="stylesheet" />
 </head>
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
->>>>>>> master
 
 <body class="theme-blue">
     <!-- Page Loader -->
@@ -628,8 +616,3 @@
         </aside>
         <!-- #END# Right Sidebar -->
     </section>
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> master
