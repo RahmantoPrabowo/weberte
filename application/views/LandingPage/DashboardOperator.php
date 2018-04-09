@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     <title>USER OPERATOR</title>
     <!-- Favicon-->
@@ -13,13 +14,21 @@
     <!-- Favicon-->
     <link rel="icon" href="<?php echo base_url("assets/");?>favicon.ico" type="image/x-icon">
 >>>>>>> Stashed changes
+=======
+    <title>USER OPERATOR</title>
+    <!-- Favicon-->
+    <link rel="icon" href="<?php echo base_url("assets/");?>/favicon.ico" type="image/x-icon">
+>>>>>>> master
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core Css -->
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> master
     <link href="<?php echo base_url("assets/");?>/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Waves Effect Css -->
@@ -46,6 +55,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
+<<<<<<< HEAD
 =======
     <link href="<?php echo base_url("assets/");?>plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
@@ -867,6 +877,8 @@
                                 <small>You can edit any columns except header/footer</small>
                             </h2>
 >>>>>>> Stashed changes
+=======
+>>>>>>> master
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
                                     <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -880,7 +892,10 @@
                                 </li>
                             </ul>
                         </div>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> master
                         <div class="body table-responsive">
                             <table class="table">
                                 <thead>
@@ -934,6 +949,7 @@
                             ?>
 
                                     </tbody>
+<<<<<<< HEAD
 =======
                         <div class="body">
                             <table id="mainTable" class="table table-striped">
@@ -986,12 +1002,17 @@
                                     </tr>
                                 </tfoot>
 >>>>>>> Stashed changes
+=======
+>>>>>>> master
                             </table>
                         </div>
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> master
             <!-- #END# Basic Table -->
             <div align="right">
                 <h1><b><a href="<?php echo site_url('LandingPage/sign_up'); ?>">+ User Baru</a></b> </h1>
@@ -1000,6 +1021,7 @@
     </section>
 
 
+<<<<<<< HEAD
 =======
         </div>
     </section>
@@ -1029,6 +1051,8 @@
     <!-- Demo Js -->
     <script src="<?php echo base_url("assets/");?>js/demo.js"></script>
 >>>>>>> Stashed changes
+=======
+>>>>>>> master
 </body>
 
 </html>
