@@ -13,6 +13,13 @@ class DashboardWarga extends CI_Controller {
 	public function index()
 	{
      $this->load->view('header/header-warga');
+     $this->load->view('LandingPage/DashboardWargaNotApproved');
+     $this->load->view('footer/footer-form');
+  }
+
+  public function Approved()
+  {
+     $this->load->view('header/header-warga');
      $this->load->view('LandingPage/DashboardWarga');
      $this->load->view('footer/footer-form');
   }

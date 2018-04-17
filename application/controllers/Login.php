@@ -27,27 +27,45 @@ class Login extends CI_Controller {
                 'fullname'   => $row['firstname'],
                 'id_number'  => $row['lastname'],
                 'email'      => $row['nama'],
-                'peran'       => $row['peran']
+                'peran'      => $row['peran'],
+                'role'       => $row['role'],
+                'status'     => $row['status']
 
                 );
                     $this->session->set_userdata('data_session',$sess_array);
 
             }
 
-            if($hasil[0]['peran']=="Pak Lurah"){ 
-                    redirect(site_url('DashboardLurah'));
-                }
-            elseif($hasil[0]['peran']=="Kabid Data"){ 
-                   redirect(site_url('DashboardKabidData'));
-                }
-
-            elseif($hasil[0]['peran']=="Operator"){
-                  redirect(site_url('DashboardOperator'));
+            if($hasil[0]['peran']=="Pak Lurah")
+            { 
+              redirect(site_url('DashboardLurah'));
             }
-                
-            else{ 
-                  redirect(site_url('Registrasi'));
-                }        
+            elseif($hasil[0]['peran']=="Kabid Data")
+            { 
+              redirect(site_url('DashboardKabidData'));
+            }
+            elseif($hasil[0]['peran']=="Operator")
+            {
+              redirect(site_url('DashboardOperator'));
+            }
+            elseif($hasil[0]['role']=="7")
+            {
+              if ($hasil[0]['status']=="1") {
+                redirect(site_url('DashboardWarga/Approved'));
+              }
+              else{
+                redirect(site_url('DashboardWarga'));
+              }
+              
+            }
+            elseif($hasil[0]['role']=="5")
+            {
+              redirect(site_url('DashboardHumas'));
+            }          
+            else
+            { 
+              redirect(site_url('Registrasi'));
+            }        
 
           }
 

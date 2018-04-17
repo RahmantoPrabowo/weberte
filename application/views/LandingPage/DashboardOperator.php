@@ -61,6 +61,7 @@
                                         <th>ID Number</th>
                                         <th>email</th>
                                         <th>peran</th>
+                                        <th>Approval</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -79,13 +80,19 @@
                                               $sess_array = array();
                                                 foreach($hasil as $row)
                                                 {
-
+                                                    if($row['status']=="1"){
+                                                        $status = "Approved";
+                                                    }else
+                                                    {
+                                                        $status = "Not Approved";
+                                                    }
                                                     $sess_array = array(
                                                     'id'         => $row['id'],
                                                     'fullname'   => $row['fullname'],
                                                     'id_number'  => $row['id_number'],
                                                     'email'      => $row['email'],
-                                                    'peran'      => $row['peran']
+                                                    'peran'      => $row['peran'],
+                                                    'status'     => $status
 
                                                     );
 
@@ -96,6 +103,7 @@
                                                     echo "<td>".$sess_array['id_number']."</td>";
                                                     echo "<td>".$sess_array['email']."</td>";
                                                     echo "<td>".$sess_array['peran']."</td>";
+                                                    echo "<td>".$sess_array['status']."</td>";
                                                     echo "<td><a href=".site_url('DashboardOperator/view/').$sess_array[
                                                     'id'].">view</a> | <a href=''>edit </a> | <a href=''> delete </a></td>";
                                                      }

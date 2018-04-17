@@ -26,7 +26,7 @@
         <div class="container">
             <div class="dashboardtitle"> 
                 <h1>Daftar Informasi Penting</h1>
-                        <button type="button" class="btn btn-success m-t-15 waves-effect">Tambah Informasi Penting</button>
+                        <a type="button" class="btn btn-success m-t-15 waves-effect" href="<?php echo site_url("DashboardHumasInsertPost");?>">Tambah Informasi Penting</a>
                         <!-- <div class="input-group">
                             <span class="input-group-addon">
                                 <i class="material-icons">person</i>

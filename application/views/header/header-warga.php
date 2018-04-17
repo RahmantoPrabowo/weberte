@@ -408,10 +408,10 @@
                         </ul-->
                     </li>
                     <li class="active">
-                        <!--a href="javascript:void(0);" class="menu-toggle">
+                        <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">assignment</i>
-                            <span>Dashboard</span>
-                        </a-->
+                            <span>Ubah Data</span>
+                        </a>
                         
                         <!--a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">view_list</i>

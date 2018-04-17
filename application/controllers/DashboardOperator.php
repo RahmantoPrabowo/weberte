@@ -10,7 +10,7 @@ class DashboardOperator extends CI_Controller {
 
   public function index()
   {
-     $this->load->view('header/header-operator');
+     $this->load->view('header/header-basicform');
      $this->load->view('LandingPage/DashboardOperator');
      $this->load->view('footer/footer-form');
     
@@ -18,10 +18,13 @@ class DashboardOperator extends CI_Controller {
 
   public function view($id)
   {
-    $this->load->view('header/header-operator');
-    $this->load->view('LandingPage/operator-view-user',$id);
+    $data['id'] = $id;
+    $this->load->view('header/header-basicform');
+    $this->load->view('LandingPage/operator-view-user',$data);
     $this->load->view('footer/footer-form');
   }
+
+  
 
 }
 

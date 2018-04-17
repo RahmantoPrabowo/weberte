@@ -10,6 +10,12 @@
 <!-- Slimscroll Plugin Js -->
 <script src="<?php echo base_url("assets/");?>plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
 
+<!-- Waves Effect Plugin Js -->
+<script src="<?php echo base_url("assets/");?>plugins/node-waves/waves.js"></script>
+
+<!-- Autosize Plugin Js -->
+    <script src="<?php echo base_url("assets/");?>plugins/autosize/autosize.js"></script>
+
 <!-- Jquery Validation Plugin Css -->
 <script src="<?php echo base_url("assets/");?>plugins/jquery-validation/jquery.validate.js"></script>
 
@@ -20,14 +26,20 @@
 <script src="<?php echo base_url("assets/");?>plugins/sweetalert/sweetalert.min.js"></script>
 
 <!-- Waves Effect Plugin Js -->
-<script src="<?php echo base_url("assets/");?>plugins/node-waves/waves.js"></script>
+<script src="<?php echo base_url("assets/");?>plugins/momentjs/moment.js"></script>
+
+ <!-- Bootstrap Material Datetime Picker Plugin Js -->
+    <script src="<?php echo base_url("assets/");?>plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
 
 <!-- Custom Js -->
 <script src="<?php echo base_url("assets/");?>js/admin.js"></script>
+ <script src="<?php echo base_url("assets/");?>js/pages/forms/basic-form-elements.js"></script>
 <script src="<?php echo base_url("assets/");?>js/pages/forms/form-validation.js"></script>
 
 <!-- Demo Js -->
 <script src="<?php echo base_url("assets/");?>js/demo.js"></script>
+
+ 
 </body>
 
 </html>

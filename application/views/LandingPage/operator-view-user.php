@@ -4,8 +4,8 @@
                 <form>
                     <div> <h2 align="center"> Edit User </h2>
                                         <?php
-                                        $name  = $_SERVER['REQUEST_URI'];
-                                        $kode_id = substr($name,42,1);
+                                      
+                                        $kode_id = $id;
                                         //echo $kode_id;
                                        $this->db->select('*');
                                        $this->db->from('member_reguler');

@@ -311,13 +311,13 @@
                             <span>Kegiatan Warga</span>
                         </a>
                     </li-->
-                    <li>
+                    <li  class="active">
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">widgets</i>
                             <span>Data User</span>
                         </a>
                         <ul class="ml-menu">
-                            <li>
+                            <li >
                                 <a href="javascript:void(0);" class="menu-toggle">
                                     <span>Seluruh User</span>
                                 </a>
@@ -356,6 +356,13 @@
                                 </ul>
                             </li-->
                         </ul>
+                    </li>
+
+                    <li>
+                        <a href="<?php echo site_url("OperatorTask");?>">
+                            <i class="material-icons">layers</i>
+                            <span>Kelola Group</span>
+                        </a>
                     </li>
                     <li>
                         <!--a href="javascript:void(0);" class="menu-toggle">
@@ -435,7 +442,7 @@
                             </li>
                         </ul-->
                     </li>
-                    <li class="active">
+                    <li>
                         <!--a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">assignment</i>
                             <span>Dashboard</span>
